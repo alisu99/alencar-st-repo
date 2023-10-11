@@ -1,0 +1,140 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa com opacidade 0 (invisível) */
+  }
+  to {
+    opacity: 1; /* Termina com opacidade 1 (totalmente visível) */
+  }
+}
+/*barra de rolagem*/
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #231e1e;
+}
+
+/* Cor do indicador de rolagem (thumb) */
+::-webkit-scrollbar-thumb {
+  background: aquamarine;
+}
+
+/*base.html - body*/
+@font-face {
+  font-family: 'mylocalfont';
+  src: url('../fonts/ChakraPetch-SemiBold.ttf') format('woff2'),
+       url('../fonts/ChakraPetch-SemiBold.ttf') format('woff');
+}
+
+body {
+  background-image: url(../img/criacao-de-site.png);
+  background-size: 200%;
+  font-family: 'mylocalfont', sans-serif;
+  animation: fadeIn 1s ease-in-out; /* Nome da animação, duração, função de temporização */
+}
+
+/*base.html - barra de navegação*/
+#nav_logo {
+  background-image: linear-gradient(341deg,aquamarine 30%,#477bd4 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#nav {
+  background: transparent;
+}
+
+#botao_nav {
+    color: white;
+    font-size: large;
+}
+
+#botao_nav:hover {
+  color: darkgray;
+  transition: 0.20s;
+  color: white;
+}
+
+#botao_nav:active {
+    color: darkgray;
+}
+
+@keyframes rotateZAnimation {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+#botao_icone:active {
+    animation: rotateZAnimation 0.70s linear infinite;
+}
+
+/*inicio.html - cards*/
+@font-face {
+  font-family: 'mylocalfont1';
+  src: url('../fonts/ChakraPetch-Light.ttf') format('woff2'),
+       url('../fonts/ChakraPetch-Light.ttf') format('woff');
+}
+
+.card-tittle {
+  font-family: 'mylocalfont';
+}
+
+#card {
+  font-family: 'mylocalfont1';
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-size: cover;
+  border-color: rgb(86, 86, 86);
+  color: white;
+  animation: fadeIn 1s ease-in-out; /* Nome da animação, duração, função de temporização */
+  height: 10rem;
+  border-color: aquamarine;
+  flex-grow: 1;
+  flex-basis: 200;
+} 
+
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: lightskyblue;
+  transition: 0.15s;
+}
+
+#btn_card:active {
+  transform: scale(1.1);
+  transition: 0.10s;
+}
+
+#btn_card {
+  background-image: url(../img/btn_vermais.png);
+  background-size: cover;
+}
+
+/*base.html - alert*/
+#alert {
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+/*base.html - footer*/
+#footer {
+  background-image: linear-gradient(341deg,#0b07ff3e 23%,#47d49c6c 90%);
+  height: 160px;
+  color: white;
+  padding-bottom: 0;
+}

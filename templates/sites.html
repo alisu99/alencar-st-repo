@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<style>
+    body{
+        background-image: url(../static/img/criacao-de-site.png);
+    }
+
+    #pq_site {
+        color: white;
+        width: 800px;
+    }
+
+    #text-gradient-color {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 800px;
+    }
+
+    #text-gradient-color1 {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#6a9deb 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 800px;
+    }
+
+    #text-gradient-color2 {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    }
+
+    #intro {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+        }
+</style>
+<title>Sites</title>
+<div class="container">
+    <br><br>
+    <div id="intro">
+        <h1 id="text-gradient-color1"><strong>Por que ter um site?</strong></h1>
+        <br>
+        <h3 id="pq_site">Ter um site é muito importante nos dias de hoje, por algumas razões que destacam 
+            a sua importância, como <strong id="text-gradient-color">visibilidade online</strong>, <strong id="text-gradient-color">credibilidade</strong>, 
+            <strong id="text-gradient-color">acessibilidade</strong> 24 horas por dia, <strong id="text-gradient-color">marketing digital</strong>, <strong id="text-gradient-color">controle total</strong>, 
+            <strong id="text-gradient-color">vendas online</strong id="text-gradient-color">, <strong id="text-gradient-color">alcance global</strong>, facilidade de <strong id="text-gradient-color">compartilhamento</strong>, entre outros. 
+            Em resumo, ter um site é uma parte <strong id="text-gradient-color">fundamental</strong> da presença online nos dias de hoje. Ele oferece uma
+            plataforma para se comunicar, comercializar, estabelecer e alcançar um público mais amplo, 
+            além de ser uma ferramenta valiosa para o crescimento e <strong id="text-gradient-color">sucesso</strong> de muitos tipos de negócios e projetos.</h3>
+            <br>
+        </div> 
+        <a id="btn_card" class="btn btn-success" href="javascript:history.go(-1)">Voltar</a>
+</div>
+<br><br>
+{% endblock conteudo %}

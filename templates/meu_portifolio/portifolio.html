@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/portifolio.css">
+  <link rel="shortcut icon" href="../static/img/alencar.st.ico" type="image/x-icon">
+  <title>Meu portifólio</title>
+</head>
+
+<body>
+
+  <style>
+    .img-fluid {
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.544);
+      border-radius: 20rem;
+      width: 18rem;
+      display: block;
+      margin: auto;
+    }
+
+    #tecnologias {
+      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+    }
+
+    #img:hover {
+      scale: 1.1;
+      transition: 0.25s;
+    }
+
+    #text1 {
+      color: white;
+      text-align: center;
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <div class="container">
+    <br><br><br>
+    <img class="img-fluid" src="../static/img/portifolio/Alisson.jpeg" alt="alisson">
+  </div>
+  <br>
+  <h2 id="text1"><strong>Alisson Alencar Santos</strong></h2>
+  <h5 id="text1"><strong>Desenvolvedor backend</strong></h5>
+  <div style="text-align: center;">
+    <a href="https://www.instagram.com/alencar.st/"><img src="../static/img/portifolio/sociais/instagram.png"
+        alt="instagram" width="30"></a>
+    <a href="https://www.linkedin.com/in/alisson-alencar99/"><img src="../static/img/portifolio/sociais/linkedin.png"
+        alt="linkedin" width="30"></a>
+    <a href="mailto: alissonsts910@gmail.com"><img src="../static/img/portifolio/sociais/gmail.png" alt="gmail"
+        width="40"></a>
+    <br><br><br>
+
+    <div id="card" class="container">
+
+      <div class="clip">
+        <a href="" class="card">
+          <div>
+            <h4 class="card-tittle"><strong>Card 1</strong></h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="clip">
+        <a href="" class="card">
+          <div>
+            <h4 class="card-tittle"><strong>Card 2</strong></h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="clip">
+        <a href="#" class="card">
+          <div>
+            <h4 class="card-tittle"><strong>Card 3</strong></h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="clip">
+        <a href="" class="card">
+          <div>
+            <h4 class="card-tittle"><strong>Card 4</strong></h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    {% block portifolio %}
+    {% endblock portifolio %}
+
+    <br><br><br>
+    <div id="tecnologias" class="container">
+      <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" />
+      <img id="img" src="https://devicon-website.vercel.app/api/django/plain.svg?color=%23007146" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/flask/original.svg?color=%23FFFFFF" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/mysql/plain.svg?color=%230087C1" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/sqlite/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/html5/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/css3/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/bootstrap/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/git/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/github/original.svg?color=%23FFFFFF" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/vscode/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/pycharm/original.svg" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/pandas/original.svg?color=%23FFFFFF" width="40">
+      <img id="img" src="https://devicon-website.vercel.app/api/canva/original.svg" width="40">
+    </div>
+  </div>
+  <br><br>
+  <p style="text-align: center; color: white;">Desenvolvido por <a href="#">@alencarst</a></p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

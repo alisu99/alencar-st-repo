@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<style>
+#era_digital {
+  color: white;
+  /* width: 800px; */
+}
+
+#text-gradient-color {
+background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#text-gradient-color1 {
+background-image: linear-gradient(341deg,#07FFE1 23%,#6a9deb 70%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+width: 800px;
+}
+
+#text-gradient-color2 {
+background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+#intro {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+#links {
+  text-decoration: none;
+  color: white;
+}
+
+</style>
+<!---->
+<title>Página inicial - Bem vindo!</title>
+<br><br><br>
+<div>
+  <h1 id="text-gradient-color" style="text-align: center;"><strong>🌐Bem-vindo🌐<br>- Ao futuro da tecnologia -</strong></h1>
+  <div id="intro" class="container-sm">
+    <br>
+    <h3 id="era_digital">Na era digital em constante evolução, a <strong id="text-gradient-color">tecnologia</strong> é a força motriz que impulsiona empresas,
+      governos e indivíduos a alcançarem seu <strong id="text-gradient-color">potencial máximo</strong>. Se você busca soluções inovadoras, 
+      expertise técnica e suporte confiável, chegou ao lugar certo.</h3>
+  </div>
+
+  <h1 id="text-gradient-color" style="text-align: center; font-size: 60px; background-color: #47d49c;">Solicite<br>o seu serviço!</h1>
+  <br><br>
+  <h4 id="text-gradient-color2" style="text-align: center;"><strong>🌐Aqui você encontra:🌐</strong></h4>
+  <br>
+  <div id="card" class="">
+
+    <a id="links" href="{{url_for('sites')}}">
+      <div class="card" style="width: 15rem; background-image: url(../static/img/site_card.png);">
+          <div class="card-body">
+            <h5 class="card-tittle"><strong id="text-gradient-color1">Desenvolvimento de sites</strong></h5>
+            <p>Landing pages, portifólios, sites de cadastros e muito mais!</p>
+          </div>
+      </div>
+    </a>
+
+    
+    <!---->
+    <a id="links" href="{{url_for('bots')}}">
+      <div class="card" style="width: 15rem; background-image: url(../static/img/bot.png);">
+        <div class="card-body">
+          <h5 class="card-tittle"><strong id="text-gradient-color1">Desenvolvimento de bots</strong></h5>
+          <p>Bots para Whatsapp, Telegram e Instagram!</p>
+        </div>
+      </div>
+    </a>
+
+    <!---->
+    <a id="links" href="{{url_for('manutencao')}}">
+      <div class="card" style="width: 15rem; background-image: url(../static/img/manutencao.png);">
+        <div class="card-body">
+          <h5 class="card-tittle"><strong id="text-gradient-color1">Manutenção</strong></h5>
+          <br>
+          <p>Problema com sua máquina? Aqui tem a solução!</p>
+        </div>
+      </div>
+    </a>
+
+    <!---->
+    <a id="links" href="{{url_for('interfaces')}}">
+      <div class="card" style="width: 15rem; background-image: url(../static/img/interface.png);">
+        <div class="card-body">
+          <h5 class="card-tittle"><strong id="text-gradient-color1">Criação de interfaces gráficas</strong></h5>
+          <p>Aplicativos desktops para aumentar sua produtividade!</p>
+        </div>
+      </div>
+    </a>
+
+    <!---->
+    <a id="links" href="{{url_for('internet')}}">
+      <div class="card" style="width: 15rem; background-image: url(../static/img/redes.png);">
+        <div class="card-body">
+          <h5 class="card-tittle"><strong id="text-gradient-color1">Suporte de internet</strong></h5>
+          <p>Problemas na sua internet? Aqui também tem a solução!</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<br><br><br>
+
+{% endblock conteudo %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<style>
+    body {
+        background-image: url(../static/img/bot.png);
+        background-size: cover;
+    }
+
+    #pq_site {
+        color: white;
+        width: 800px;
+    }
+
+    #text-gradient-color {
+        background-image: linear-gradient(341deg, #07FFE1 23%, #47d49c 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 800px;
+    }
+
+    #text-gradient-color1 {
+        background-image: linear-gradient(341deg, #07FFE1 23%, #6a9deb 70%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 800px;
+    }
+
+    #text-gradient-color2 {
+        background-image: linear-gradient(341deg, #07FFE1 23%, #47d49c 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    #intro {
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+</style>
+<title>Bots</title>
+<div class="container">
+    <br><br>
+    <div id="intro">
+        <h1 id="text-gradient-color1"><strong>Bot? O que é isso?</strong></h1>
+        <br>
+        <h3 id="pq_site">Os bots de WhatsApp, Telegram e Instagram desempenham papéis importantes em suas
+            respectivas plataformas e têm várias vantagens e usos para empresas, organizações e indivíduos.
+            Ter esses amiguinhos traz grandes vantagens como <strong id="text-gradient-color">atendimento ao
+                cliente</strong>,
+            <strong id="text-gradient-color">automatização</strong>, <strong id="text-gradient-color">pesquisa e
+                informação</strong>,
+            <strong id="text-gradient-color">análise de dados</strong> e muito mais!
+        </h3>
+        <br>
+    </div>
+    <a id="btn_card" class="btn btn-success" href="javascript:history.go(-1)">Voltar</a>
+</div>
+<br><br>
+{% endblock conteudo %}

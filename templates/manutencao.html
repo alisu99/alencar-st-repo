@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<style>
+    body{
+        background-image: url(../static/img/manutencao.png);
+        background-size: cover;
+    }
+
+    #pq_site {
+        color: white;
+        width: 800px;
+    }
+
+    #text-gradient-color {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 800px;
+    }
+
+    #text-gradient-color1 {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#6a9deb 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 800px;
+    }
+
+    #text-gradient-color2 {
+    background-image: linear-gradient(341deg,#07FFE1 23%,#47d49c 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    }
+
+    #intro {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left; 
+
+    }
+</style>
+<title>Manutenção</title>
+<div class="container">
+    <br><br>
+    <div id="intro">
+        <h1 id="text-gradient-color1"><strong>PC lento, travando ou sem funcionar?</strong></h1>
+        <br>
+        <h3 id="pq_site">A <strong id="text-gradient-color">manutenção</strong> de computadores é de extrema importância em vários aspectos, 
+            tanto para usuários domésticos quanto para empresas. As razões pelas quais a manutenção de computadores é importante é:
+            Ter um <strong id="text-gradient-color">desempenho otimizado</strong>, bem como <strong id="text-gradient-color">prevenção de problemas</strong>,
+            <strong id="text-gradient-color">segurança</strong>, melhoria na <strong id="text-gradient-color">experiência</strong> do usuário, 
+            <strong id="text-gradient-color">confiabilidade</strong> e <strong id="text-gradient-color">redução de custos</strong>.</h3>
+            <br>
+        </div> 
+        <a id="btn_card" class="btn btn-success" href="javascript:history.go(-1)">Voltar</a>
+</div>
+<br><br>
+{% endblock conteudo %}

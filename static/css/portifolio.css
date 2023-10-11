@@ -1,0 +1,78 @@
+/*barra de rolagem*/
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #231e1e;
+}
+
+/* Cor do indicador de rolagem (thumb) */
+::-webkit-scrollbar-thumb {
+  background: aquamarine;
+}
+
+/*portifolio.html - body*/
+@font-face {
+  font-family: 'mylocalfont';
+  src: url('../fonts/ChakraPetch-SemiBold.ttf') format('woff2'),
+    url('../fonts/ChakraPetch-SemiBold.ttf') format('woff');
+}
+
+body {
+  background-image: url(../img/criacao-de-site.png);
+  background-size: 200%;
+  font-family: 'mylocalfont', sans-serif;
+  margin-top: 24px;
+}
+
+
+/*portifolio.html - cards*/
+@font-face {
+  font-family: 'mylocalfont1';
+  src: url('../fonts/ChakraPetch-Light.ttf') format('woff2'),
+    url('../fonts/ChakraPetch-Light.ttf') format('woff');
+}
+
+.card-tittle {
+  font-family: 'mylocalfont';
+  color: white;
+  text-align: center;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  font-family: 'mylocalfont1';
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+  animation: fadeIn 1s ease-in-out;
+  flex-grow: 1;
+  flex-basis: 200;
+  border-radius: 0;
+  background-color: #231e1ed4;
+  width: 99.9%;
+  height: 99.5%;
+}
+
+.clip {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+  background-color: darkcyan;
+  animation: fadeIn 1s ease-in-out;
+  flex-grow: 1;
+  flex-basis: 200;
+  border-radius: 0;
+  width: 10rem;
+  height: 4rem;
+  border-style: ridge;
+  border-color: lightgrey;
+}
